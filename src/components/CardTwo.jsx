@@ -5,7 +5,7 @@ const CardTwo = ({ rating, ...props }) => {
   const [expand, setExpand] = useState(false);
 
   return (
-    <div className="flex relative w-full mt-6 mb-2  bg-white px-10 rounded-xl">
+    <div className="flex flex-col lg:flex-row  relative w-full mt-6 mb-2  bg-white px-10 rounded-xl">
         {props?.type==="bc"?<div className="absolute flex bg-[#FF7724] p-2 rounded-xl -top-4 -left-4">
             <img src="/trophy.svg" alt="" /><p className="text-white ml-2">Best Choice</p>
         </div>:<></>}
@@ -23,7 +23,7 @@ const CardTwo = ({ rating, ...props }) => {
         />
         <p className="text-textprime-0 mt-4">{props.imagetag}</p>
       </div>
-      <div className="flex flex-col px-10 py-4 text-wrap pr-28">
+      <div className="flex flex-col lg:px-10 px-2 py-4 text-wrap lg:pr-28">
         <h1 className="text-wrap font-bold text-textprime-0">
           WixPro 72-Inch Responsive Website Builder-{" "}
           <span className="font-normal">

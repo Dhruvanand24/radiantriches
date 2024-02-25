@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../components/Card";
 import CardTwo from "../components/CardTwo";
+import Dealcard from "../components/Dealcard";
 
 const Home = () => {
   return (
@@ -15,12 +16,16 @@ const Home = () => {
             <p className="ml-2 text-textprime-0">Last Updated</p>
             <p className="ml-2">-</p>
             <p className="ml-2">February 22, 2020</p>
-            <img src="/info.svg" className="w-[20px] h-[20px] ml-6 cursor-pointer" alt="" />
+            <img
+              src="/info.svg"
+              className="w-[20px] h-[20px] ml-6 cursor-pointer"
+              alt=""
+            />
             <p className="ml-2">Advertising Disclosure</p>
           </div>
           <ul className="hidden lg:menu menu-horizontal  px-1 justify-end">
             <li className="">
-              <details >
+              <details>
                 <summary className="text-[10px] lg:text-[14px]">
                   Top Relevant
                 </summary>
@@ -76,23 +81,66 @@ const Home = () => {
           </p>
         </div>
         <div className="flex flex-wrap mt-6 mb-4 w-full px-1 items-center text-[10px] lg:text-[14px] gap-4">
-          <p className="cursor-pointer select-none hover:text-black hover:font-semibold">Home</p>
+          <p className="cursor-pointer select-none hover:text-black hover:font-semibold">
+            Home
+          </p>
           <img src="/right.svg" alt="" />
-          <p className="cursor-pointer select-none hover:text-black hover:font-semibold">Hosting for all</p>
+          <p className="cursor-pointer select-none hover:text-black hover:font-semibold">
+            Hosting for all
+          </p>
           <img src="/right.svg" alt="" />
-          <p className="cursor-pointer select-none hover:text-black hover:font-semibold">Hosting</p>
+          <p className="cursor-pointer select-none hover:text-black hover:font-semibold">
+            Hosting
+          </p>
           <img src="/right.svg" alt="" />
-          <p className="cursor-pointer select-none hover:text-black hover:font-semibold">Hosting6</p>
+          <p className="cursor-pointer select-none hover:text-black hover:font-semibold">
+            Hosting6
+          </p>
           <img src="/right.svg" alt="" />
-          <p className="cursor-pointer select-none hover:text-black hover:font-semibold">Hosting5</p>
+          <p className="cursor-pointer select-none hover:text-black hover:font-semibold">
+            Hosting5
+          </p>
         </div>
 
-        <Card rating={9.8} index={1} type={"bc"} imagetag={"Builder1"} remark={"Exceptional"} />
-        <Card rating={9.5} index={2} type={"bv"} imagetag={"Builder"} remark={"Exceptional"}/>
-        <Card rating={9.3} index={3} imagetag={"Builder1"}remark={"Exceptional"}/>
-        <CardTwo rating={9.1} index={4} remark={"Very Good"}/>
-        <h1 className="mt-12 text-heading-0 text-[32px]">Related deals you might like for</h1>
-
+        <Card
+          rating={9.8}
+          index={1}
+          type={"bc"}
+          imagetag={"Builder1"}
+          remark={"Exceptional"}
+        />
+        <Card
+          rating={9.5}
+          index={2}
+          type={"bv"}
+          imagetag={"Builder"}
+          remark={"Exceptional"}
+        />
+        <Card
+          rating={9.3}
+          index={3}
+          imagetag={"Builder1"}
+          remark={"Exceptional"}
+        />
+        <CardTwo rating={9.1} index={4} remark={"Very Good"} />
+        <h1 className="mt-12 text-heading-0 text-[32px]">
+          Related deals you might like for
+        </h1>
+        <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-0 lg:justify-evenly w-full mt-10">
+          <Dealcard />
+          <Dealcard />
+          <Dealcard />
+        </div>
+        <div className="flex justify-between w-full flex-wrap mb-4">
+          <h1 className="mt-6 text-[#5C6874] text-[32px] ml-4">
+            Sign up and get exclusive <br />
+            special deals
+          </h1>
+          <div className="flex justify-center items-center join">
+          <div className='flex bg-[#FFFFFF] items-center join-item  h-[44px]  hover:bg-white'><input className='input  text-textprime-0 bg-[#FFFFFF] focus:outline-none focus:border-none' placeholder='enter email'></input></div>
+            <div className="bg-blueprime-0 flex items-center px-2 join-item h-[44px]  text-white cursor-pointer select-none">Sign Up</div>
+          </div>
+        </div>
       </div>
     </div>
   );
