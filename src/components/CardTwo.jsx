@@ -17,7 +17,7 @@ const CardTwo = ({ rating, ...props }) => {
         </div>
       <div className="flex flex-col justify-center items-center">
         <img
-          className="min-h-[103px] min-w-[141px] mx-6"
+          className="min-h-[103px] min-w-[141px] mx-6 sm:mt-2 lg:mt-0"
           src="/cardimage.svg"
           alt=""
         />
