@@ -5,7 +5,7 @@ const CardTwo = ({ rating, ...props }) => {
   const [expand, setExpand] = useState(false);
 
   return (
-    <div className="flex relative w-full mt-6 mb-2 h-[255px] bg-white px-10 rounded-xl">
+    <div className="flex relative w-full mt-6 mb-2  bg-white px-10 rounded-xl">
         {props?.type==="bc"?<div className="absolute flex bg-[#FF7724] p-2 rounded-xl -top-4 -left-4">
             <img src="/trophy.svg" alt="" /><p className="text-white ml-2">Best Choice</p>
         </div>:<></>}
@@ -31,22 +31,32 @@ const CardTwo = ({ rating, ...props }) => {
             Interface for Professional Websites and Online Stores (Black/Blue)
           </span>
         </h1>
-        <p className="bg-[#F2F4F7] p-2 px-3 rounded-lg text-[#074786] inline-block w-fit">26% off</p>
+        <p className="bg-[#F2F4F7] p-2 px-3 rounded-lg text-[#074786] inline-block w-fit mt-2">26% off</p>
         <h1 className="font-bold text-heading-0 mt-2">Main highlights</h1>
         <div className="mt-2 ml-4 flex w-full bg-[#FFF4ED] rounded-xl p-3">
             <ul>
                 <li>
-                    <p className="bg-white text-blueprime-0 rounded-lg p-2 inline-block w-fit">9.9</p><p>Building responsive</p>
+                    <div className="flex items-center mb-2">
+                    <p className="bg-white text-blueprime-0 rounded-lg p-2 inline-block w-fit">9.9</p><p className="ml-2 text-[#4B5665]">Building responsive</p></div>
                 </li>
                 <li>
-                    <p className="bg-white text-blueprime-0 rounded-lg p-2 inline-block w-fit">8.9</p><p>Cool</p>
+                <div className="flex items-center mb-2">
+                    <p className="bg-white text-blueprime-0 rounded-lg p-2 inline-block w-fit">8.9</p><p className="ml-2 text-[#4B5665]">Cool</p></div>
                 </li>
-                <li>
-                    <p className="bg-white text-blueprime-0 rounded-lg p-2 inline-block w-fit">8.9</p><p>Docs</p>
+                <li><div className="flex items-center">
+                    <p className="bg-white text-blueprime-0 rounded-lg p-2 inline-block w-fit">8.9</p><p className="ml-2 text-[#4B5665]">Docs</p></div>
                 </li>
             </ul>
 
         </div>
+        <h1 className="text-heading-0 mt-2">Why we love it</h1>
+        <div className="flex items-center mb-1">
+                    <img className="h-[24px] w-[24px]" src="/bluecheck.svg" alt="" /><p className="ml-2 text-[#4B5665]">Documentation</p></div>
+                    <div className="flex items-center mb-1">
+                    <img className="h-[24px] w-[24px]" src="/bluecheck.svg" alt="" /><p className="ml-2 text-[#4B5665]">Easy Use</p></div>
+                    <div className="flex items-center mb-1">
+                    <img className="h-[24px] w-[24px]" src="/bluecheck.svg" alt="" /><p className="ml-2 text-[#4B5665]">Out Of Box</p></div>
+                    
         
         <div className="flex w-full mt-auto">
           <p className="text-blueprime-0 mr-2 cursor-pointer select-none hover:text-blue-700 hover:font-semibold transition-all ease-linear duration-200">Show more</p>

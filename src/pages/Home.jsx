@@ -19,12 +19,12 @@ const Home = () => {
             <p className="ml-2">Advertising Disclosure</p>
           </div>
           <ul className="hidden lg:menu menu-horizontal  px-1 justify-end">
-            <li>
-              <details>
+            <li className="">
+              <details >
                 <summary className="text-[10px] lg:text-[14px]">
                   Top Relevant
                 </summary>
-                <ul className="p-2">
+                <ul className="p-2 bg-white">
                   <li>
                     <a>Submenu 1</a>
                   </li>
@@ -43,7 +43,7 @@ const Home = () => {
                 <summary className="text-[10px] lg:text-[14px]">
                   Top Relevant
                 </summary>
-                <ul className="p-2">
+                <ul className="p-2 bg-white">
                   <li>
                     <a>Submenu 1</a>
                   </li>
@@ -56,22 +56,22 @@ const Home = () => {
           </ul>
         </div>
         <div className="flex text-[10px] lg:text-[14px] mt-2 lg:mt-6 w-full px-1 items-center gap-8 flex-wrap gap-y-2 text-textprime-0">
-          <p className="bg-white p-2 px-6 rounded-lg hover:bg-dark-0 hover:text-white cursor-pointer select-none">
+          <p className="bg-white p-2 px-6 rounded-lg transition-all ease-in duration-300 hover:bg-dark-0 hover:shadow-xl hover:text-white cursor-pointer select-none">
             Tools
           </p>
-          <p className="bg-white p-2 px-6 rounded-lg hover:bg-dark-0 hover:text-white cursor-pointer select-none">
+          <p className="bg-white p-2 px-6 rounded-lg transition-all ease-in duration-300 hover:bg-dark-0 hover:shadow-xl hover:text-white cursor-pointer select-none">
             AWS Builder
           </p>
-          <p className="bg-white p-2 px-6 rounded-lg hover:bg-dark-0 hover:text-white cursor-pointer select-none">
+          <p className="bg-white p-2 px-6 rounded-lg transition-all ease-in duration-300 hover:bg-dark-0 hover:shadow-xl hover:text-white cursor-pointer select-none">
             Start Build
           </p>
-          <p className="bg-white p-2 px-6 rounded-lg hover:bg-dark-0 hover:text-white cursor-pointer select-none">
+          <p className="bg-white p-2 px-6 rounded-lg transition-all ease-in duration-300 hover:bg-dark-0 hover:shadow-xl hover:text-white cursor-pointer select-none">
             Build Supplies
           </p>
-          <p className="bg-white p-2 px-6 rounded-lg hover:bg-dark-0 hover:text-white cursor-pointer select-none">
+          <p className="bg-white p-2 px-6 rounded-lg transition-all ease-in duration-300 hover:bg-dark-0 hover:shadow-xl hover:text-white cursor-pointer select-none">
             Tooling
           </p>
-          <p className="bg-white p-2 px-6 rounded-lg hover:bg-dark-0 hover:text-white cursor-pointer select-none">
+          <p className="bg-white p-2 px-6 rounded-lg transition-all ease-in duration-300 hover:bg-dark-0 hover:shadow-xl hover:text-white cursor-pointer select-none">
             BlueHosting
           </p>
         </div>
@@ -91,6 +91,7 @@ const Home = () => {
         <Card rating={9.5} index={2} type={"bv"} imagetag={"Builder"} remark={"Exceptional"}/>
         <Card rating={9.3} index={3} imagetag={"Builder1"}remark={"Exceptional"}/>
         <CardTwo rating={9.1} index={4} remark={"Very Good"}/>
+        <h1 className="mt-12 text-heading-0 text-[32px]">Related deals you might like for</h1>
 
       </div>
     </div>
