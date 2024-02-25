@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Navbar = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const handlechange = (event)=> {
+     setSearchTerm(event.target.value);
+  }
   return (
     <div className="navbar bg-[#212731]">
   <div className="navbar-start">
@@ -18,12 +22,12 @@ const Navbar = () => {
   </div>
   <div className='lg:hidden ml-2 bg-yellow join'>
   <img className='bg-white join-item ml-2 p-1' src="/search.svg" alt="" />
-  <input className='join-item input-sm h-[40px] bg-[#FFFFFF] focus:outline-none focus:border-none' placeholder='search..'></input>
+  <input className='join-item input-sm h-[40px] bg-[#FFFFFF] focus:outline-none focus:border-none' value={searchTerm} onChange={handlechange} placeholder='search..'></input>
   </div>
 
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 text-[#D1D6DA] items-center gap-16 font-inter">
-      <li><div className='bg-[#FFFFFF] ring-[1px] ring-[#E1E4E6] hover:bg-white p-0 px-4'><img src="/search.svg" alt="" /><input className='input h-[40px] text-textprime-0 bg-[#FFFFFF] focus:outline-none focus:border-none' placeholder='search...'></input></div></li>
+      <li><div className='bg-[#FFFFFF] ring-[1px] ring-[#E1E4E6] hover:bg-white p-0 px-4'><img src="/search.svg" alt="" /><input className='input h-[40px] text-textprime-0 bg-[#FFFFFF] focus:outline-none focus:border-none'value={searchTerm} onChange={handlechange} placeholder='search...'></input></div></li>
       <li className='hover:text-white'><a>Categories</a></li>
       <li className='hover:text-white'><a>Website Builder</a></li>
       <li className='hover:text-white'><a>Today's Deals</a></li>

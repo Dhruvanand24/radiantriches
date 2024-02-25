@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../components/Card";
 import CardTwo from "../components/CardTwo";
 import Dealcard from "../components/Dealcard";
 
 const Home = () => {
+    const [email, setEmail] = useState("");
+    const handlechange = (event)=> {
+        setEmail(event.target.value);
+     }
   return (
     <div className="flex flex-col w-full mt-12 px-4 lg:px-72 items-center">
       <div className="flex flex-col items-start w-full">
@@ -147,7 +151,7 @@ const Home = () => {
             special deals
           </h1>
           <div className="flex justify-center items-center join">
-          <div className='flex bg-[#FFFFFF] items-center join-item  h-[44px]  hover:bg-white'><input className='input  text-textprime-0 bg-[#FFFFFF] focus:outline-none focus:border-none' placeholder='enter email' type="email"></input></div>
+          <div className='flex bg-[#FFFFFF] items-center join-item  h-[44px]  hover:bg-white'><input className='input  text-textprime-0 bg-[#FFFFFF] focus:outline-none focus:border-none' placeholder='enter email' value={email} onChange={handlechange} type="email"></input></div>
             <div className="bg-blueprime-0 hidden lg:flex items-center px-2 join-item h-[44px]  text-white cursor-pointer select-none">Sign Up</div>
           </div>
         </div>
