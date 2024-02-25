@@ -16,7 +16,7 @@ const Navbar = () => {
     </div>
   
   </div>
-  <div className='ml-2 bg-yellow join'>
+  <div className='lg:hidden ml-2 bg-yellow join'>
   <img className='bg-white join-item ml-2 p-1' src="/search.svg" alt="" />
   <input className='join-item input-sm h-[40px] bg-[#FFFFFF] focus:outline-none focus:border-none' placeholder='search..'></input>
   </div>

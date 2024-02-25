@@ -108,6 +108,9 @@ const Home = () => {
           type={"bc"}
           imagetag={"Builder1"}
           remark={"Exceptional"}
+          title={"WixPro 72-Inch Responsive Website Builder-"}
+          desc={"Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)"}
+          mh={"[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides."}
         />
         <Card
           rating={9.5}
@@ -115,14 +118,21 @@ const Home = () => {
           type={"bv"}
           imagetag={"Builder"}
           remark={"Exceptional"}
+          title={"SiteCraft 68-Inch Ultimate Web Design Studio-"}
+          desc={"Advanced Site Creation Toolkit, Intuitive Drag-and-Drop Editor for Dynamic Websites and E-commerce Platforms (Green/White)"}
+          mh={"[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides."}
         />
         <Card
           rating={9.3}
           index={3}
           imagetag={"Builder1"}
           remark={"Exceptional"}
+          desc={"Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)"}
+          title={"WixPro 72-Inch Responsive Website Builder-"}
+          mh={"[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides."}
+          
         />
-        <CardTwo rating={9.1} index={4} remark={"Very Good"} />
+        <CardTwo rating={9.1} desc={"An extensive library of widgets and apps, and detailed step-by-step guides"} index={4} remark={"Very Good"} title={"WixPro 72-Inch Responsive Website Builder-"}  />
         <h1 className="mt-12 text-heading-0 text-[32px]">
           Related deals you might like for
         </h1>

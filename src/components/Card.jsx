@@ -23,24 +23,19 @@ const Card = ({ rating, ...props }) => {
         />
         <p className="text-textprime-0 mt-4">{props.imagetag}</p>
       </div>
-      <div className="flex flex-col px-2 lg:px-10 py-4 text-wrap lg:pr-28">
+      <div className="flex flex-col px-2 lg:px-10 py-4 text-wrap lg:pr-28 md:pr-14">
         <h1 className="text-wrap font-bold text-textprime-0">
-          WixPro 72-Inch Responsive Website Builder-{" "}
+          {props.title}{" "}
           <span className="font-normal">
-            Comprehensive Digital Platform Creation Tool, Streamlined Design
-            Interface for Professional Websites and Online Stores (Black/Blue)
+           {props.desc}
           </span>
         </h1>
         <h1 className="font-bold text-heading-0 mt-2">Main highlights</h1>
         <p className="text-textprime-0 mt-2 ml-4">
-          [What You Get]: Receive the WixPro website builder suite, access to
-          premium design templates, an extensive library of widgets and apps,
-          and detailed step-by-step guides.
+         {props.mh}
         </p>
         <p className="text-textprime-0 mt-2 ml-4">
-          [What You Get]: Receive the WixPro website builder suite, access to
-          premium design templates, an extensive library of widgets and apps,
-          and detailed step-by-step guides.
+          {props.mh}
         </p>
         <div className="flex w-full mt-auto">
           <p className="text-blueprime-0 mr-2 cursor-pointer select-none hover:text-blue-700 hover:font-semibold transition-all ease-linear duration-200">Show more</p>

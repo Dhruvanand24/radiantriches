@@ -23,12 +23,11 @@ const CardTwo = ({ rating, ...props }) => {
         />
         <p className="text-textprime-0 mt-4">{props.imagetag}</p>
       </div>
-      <div className="flex flex-col lg:px-10 px-2 py-4 text-wrap lg:pr-28">
+      <div className="flex flex-col lg:px-10 px-2 py-4 text-wrap lg:pr-28 md:pr-14">
         <h1 className="text-wrap font-bold text-textprime-0">
-          WixPro 72-Inch Responsive Website Builder-{" "}
+          {props.title}-{" "}
           <span className="font-normal">
-            Comprehensive Digital Platform Creation Tool, Streamlined Design
-            Interface for Professional Websites and Online Stores (Black/Blue)
+            {props.desc}
           </span>
         </h1>
         <p className="bg-[#F2F4F7] p-2 px-3 rounded-lg text-[#074786] inline-block w-fit mt-2">26% off</p>
