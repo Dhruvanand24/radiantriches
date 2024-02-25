@@ -16,10 +16,11 @@ const Navbar = () => {
     </div>
   
   </div>
-  {/* <div className="navbar-center lg:hidden"> <ul className="menu menu-horizontal px-1 text-[#D1D6DA] items-center gap-16 font-inter">
-      <li><div className='bg-[#FFFFFF] ring-[1px] ring-[#E1E4E6] hover:bg-white p-0 px-4'><img src="/search.svg" alt="" /><input className='input input-xs h-[40px] bg-[#FFFFFF] focus:outline-none focus:border-none' placeholder='search..'></input></div></li>
-     
-    </ul></div> */}
+  <div className='ml-2 bg-yellow join'>
+  <img className='bg-white join-item ml-2 p-1' src="/search.svg" alt="" />
+  <input className='join-item input-sm h-[40px] bg-[#FFFFFF] focus:outline-none focus:border-none' placeholder='search..'></input>
+  </div>
+
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 text-[#D1D6DA] items-center gap-16 font-inter">
       <li><div className='bg-[#FFFFFF] ring-[1px] ring-[#E1E4E6] hover:bg-white p-0 px-4'><img src="/search.svg" alt="" /><input className='input h-[40px] text-textprime-0 bg-[#FFFFFF] focus:outline-none focus:border-none' placeholder='search...'></input></div></li>
