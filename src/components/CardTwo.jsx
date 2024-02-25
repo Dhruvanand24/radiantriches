@@ -63,7 +63,7 @@ const CardTwo = ({ rating, ...props }) => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-between">
-        <div className="flex h-[118px] w-[135px] relative text-[#074786] bg-[#F3F9FF] flex-col justify-center items-center rounded-b-xl">
+        <div className="flex mb-2 h-[118px] w-[135px] relative text-[#074786] bg-[#F3F9FF] flex-col justify-center items-center rounded-b-xl">
             <img className="absolute top-2 right-8 h-[12px] w-[12px]" src="/info.svg" alt="" />
           <h1 className="text-[32px]">{rating}</h1>
           <p className="text-[14px]">
