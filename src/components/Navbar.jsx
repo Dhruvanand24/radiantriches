@@ -17,7 +17,7 @@ const Navbar = () => {
   
   </div>
   <div className="navbar-center lg:hidden"> <ul className="menu menu-horizontal px-1 text-[#D1D6DA] items-center gap-16 font-inter">
-      <li><div className='bg-[#FFFFFF] ring-[1px] ring-[#E1E4E6] hover:bg-white p-0 px-4'><img src="/search.svg" alt="" /><input className='input h-[40px] bg-[#FFFFFF] focus:outline-none focus:border-none input-md lg:input' placeholder='search..'></input></div></li>
+      <li><div className='bg-[#FFFFFF] ring-[1px] ring-[#E1E4E6] hover:bg-white p-0 px-4'><img src="/search.svg" alt="" /><input className='input h-[40px] bg-[#FFFFFF] focus:outline-none focus:border-none input-sm lg:input' placeholder='search..'></input></div></li>
      
     </ul></div>
   <div className="navbar-center hidden lg:flex">
