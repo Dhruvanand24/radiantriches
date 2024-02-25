@@ -147,7 +147,7 @@ const Home = () => {
             special deals
           </h1>
           <div className="flex justify-center items-center join">
-          <div className='flex bg-[#FFFFFF] items-center join-item  h-[44px]  hover:bg-white'><input className='input  text-textprime-0 bg-[#FFFFFF] focus:outline-none focus:border-none' placeholder='enter email'></input></div>
+          <div className='flex bg-[#FFFFFF] items-center join-item  h-[44px]  hover:bg-white'><input className='input  text-textprime-0 bg-[#FFFFFF] focus:outline-none focus:border-none' placeholder='enter email' type="email"></input></div>
             <div className="bg-blueprime-0 hidden lg:flex items-center px-2 join-item h-[44px]  text-white cursor-pointer select-none">Sign Up</div>
           </div>
         </div>
