@@ -148,8 +148,11 @@ const Home = () => {
           </h1>
           <div className="flex justify-center items-center join">
           <div className='flex bg-[#FFFFFF] items-center join-item  h-[44px]  hover:bg-white'><input className='input  text-textprime-0 bg-[#FFFFFF] focus:outline-none focus:border-none' placeholder='enter email'></input></div>
-            <div className="bg-blueprime-0 flex items-center px-2 join-item h-[44px]  text-white cursor-pointer select-none">Sign Up</div>
+            <div className="bg-blueprime-0 hidden lg:flex items-center px-2 join-item h-[44px]  text-white cursor-pointer select-none">Sign Up</div>
           </div>
+        </div>
+        <div className="flex w-full justify-end mt-2">
+        <p className="flex w-fit bg-blueprime-0 rounded-lg px-4 mb-2 text-white lg:hidden p-2 cursor-pointer select-none">Signup</p>
         </div>
       </div>
     </div>
