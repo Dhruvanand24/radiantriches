@@ -2,7 +2,7 @@ import React from 'react'
 
 const Dealcard = () => {
   return (
-    <div className='flex flex-col lg:w-[333px] h-[425px] bg-white p-4 justify-evenly items-center rounded-xl'>
+    <div className='flex flex-col lg:w-[333px] h-[425px] bg-white p-4 justify-evenly items-center rounded-xl hover:shadow-lg select-none'>
       <img src="/cardimage.svg" alt="" />
       <div className='flex justify-center lg:justify-start w-full gap-2 mt-12'>
       <p className="bg-[#F2F4F7] p-1 px-3 rounded-lg text-[#074786] text-[13px] inline-block w-fit mt-2">26% off</p>

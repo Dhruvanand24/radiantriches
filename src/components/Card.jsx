@@ -37,8 +37,11 @@ const Card = ({ rating, ...props }) => {
         <p className="text-textprime-0 mt-2 ml-4">
           {props.mh}
         </p>
+        <p className="text-textprime-0 mt-2 ml-4">
+          {expand?props.mh:<></>}
+        </p>
         <div className="flex w-full mt-auto">
-          <p className="text-blueprime-0 mr-2 cursor-pointer select-none hover:text-blue-700 hover:font-semibold transition-all ease-linear duration-200">Show more</p>
+          <p onClick={()=>setExpand(!expand)} className="text-blueprime-0 mr-2 cursor-pointer select-none transiti hover:text-blue-700 hover:font-semibold transition-all ease-linear duration-200">{expand?"Show less":"Show more"}</p>
           <img className="" src="/opentoggle.svg" alt="" />
         </div>
       </div>
