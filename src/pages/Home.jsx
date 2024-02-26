@@ -4,10 +4,10 @@ import CardTwo from "../components/CardTwo";
 import Dealcard from "../components/Dealcard";
 
 const Home = () => {
-    const [email, setEmail] = useState("");
-    const handlechange = (event)=> {
-        setEmail(event.target.value);
-     }
+  const [email, setEmail] = useState("");
+  const handlechange = (event) => {
+    setEmail(event.target.value);
+  };
   return (
     <div className="flex flex-col w-full mt-12 px-4 lg:px-72 items-center">
       <div className="flex flex-col items-start w-full">
@@ -33,12 +33,15 @@ const Home = () => {
                 <summary className="text-[10px] lg:text-[14px]">
                   Top Relevant
                 </summary>
-                <ul className="p-2 bg-white">
+                <ul className="p-2 bg-white z-50">
                   <li>
-                    <a>Submenu 1</a>
+                    <a>Top Rated</a>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                    <a>Price high to low</a>
+                  </li>
+                  <li>
+                    <a>Price low to high</a>
                   </li>
                 </ul>
               </details>
@@ -52,12 +55,15 @@ const Home = () => {
                 <summary className="text-[10px] lg:text-[14px]">
                   Top Relevant
                 </summary>
-                <ul className="p-2 bg-white">
-                  <li>
-                    <a>Submenu 1</a>
+                <ul className="p-2 bg-white z-50">
+                <li>
+                    <a>Top Rated</a>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                    <a>Price high to low</a>
+                  </li>
+                  <li>
+                    <a>Price low to high</a>
                   </li>
                 </ul>
               </details>
@@ -113,8 +119,12 @@ const Home = () => {
           imagetag={"Builder1"}
           remark={"Exceptional"}
           title={"WixPro 72-Inch Responsive Website Builder-"}
-          desc={"Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)"}
-          mh={"[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides."}
+          desc={
+            "Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)"
+          }
+          mh={
+            "[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides."
+          }
         />
         <Card
           rating={9.5}
@@ -123,20 +133,35 @@ const Home = () => {
           imagetag={"Builder"}
           remark={"Exceptional"}
           title={"SiteCraft 68-Inch Ultimate Web Design Studio-"}
-          desc={"Advanced Site Creation Toolkit, Intuitive Drag-and-Drop Editor for Dynamic Websites and E-commerce Platforms (Green/White)"}
-          mh={"[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides."}
+          desc={
+            "Advanced Site Creation Toolkit, Intuitive Drag-and-Drop Editor for Dynamic Websites and E-commerce Platforms (Green/White)"
+          }
+          mh={
+            "[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides."
+          }
         />
         <Card
           rating={9.3}
           index={3}
           imagetag={"Builder1"}
           remark={"Exceptional"}
-          desc={"Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)"}
+          desc={
+            "Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)"
+          }
           title={"WixPro 72-Inch Responsive Website Builder-"}
-          mh={"[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides."}
-          
+          mh={
+            "[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides."
+          }
         />
-        <CardTwo rating={9.1} desc={"An extensive library of widgets and apps, and detailed step-by-step guides"} index={4} remark={"Very Good"} title={"WixPro 72-Inch Responsive Website Builder-"}  />
+        <CardTwo
+          rating={9.1}
+          desc={
+            "An extensive library of widgets and apps, and detailed step-by-step guides"
+          }
+          index={4}
+          remark={"Very Good"}
+          title={"WixPro 72-Inch Responsive Website Builder-"}
+        />
         <h1 className="mt-12 text-heading-0 text-[32px]">
           Related deals you might like for
         </h1>
@@ -151,12 +176,24 @@ const Home = () => {
             special deals
           </h1>
           <div className="flex justify-center items-center join">
-          <div className='flex bg-[#FFFFFF] items-center join-item  h-[44px]  hover:bg-white'><input className='input  text-textprime-0 bg-[#FFFFFF] focus:outline-none focus:border-none' placeholder='enter email' value={email} onChange={handlechange} type="email"></input></div>
-            <div className="bg-blueprime-0 hidden lg:flex items-center px-2 join-item h-[44px]  text-white cursor-pointer select-none">Sign Up</div>
+            <div className="flex bg-[#FFFFFF] items-center join-item  h-[44px]  hover:bg-white">
+              <input
+                className="input  text-textprime-0 bg-[#FFFFFF] focus:outline-none focus:border-none"
+                placeholder="enter email"
+                value={email}
+                onChange={handlechange}
+                type="email"
+              ></input>
+            </div>
+            <div className="bg-blueprime-0 hidden lg:flex items-center px-2 join-item h-[44px]  text-white cursor-pointer select-none">
+              Sign Up
+            </div>
           </div>
         </div>
         <div className="flex w-full justify-end mt-2">
-        <p className="flex w-fit bg-blueprime-0 rounded-lg px-4 mb-2 text-white lg:hidden p-2 cursor-pointer select-none">Signup</p>
+          <p className="flex w-fit bg-blueprime-0 rounded-lg px-4 mb-2 text-white lg:hidden p-2 cursor-pointer select-none">
+            Signup
+          </p>
         </div>
       </div>
     </div>
